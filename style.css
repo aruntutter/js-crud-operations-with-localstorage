@@ -4,10 +4,70 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
 }
 
 html,
 body {
   width: 100%;
   height: 100%;
+}
+
+header h1 {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 2rem;
+  gap: 3rem;
+}
+
+.insert-container,
+.read-data-container,
+.Delete-data-container {
+  max-width: 400px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h3,
+p,
+.insert-input,
+.input-key,
+.btn {
+  padding-bottom: 10px;
+  font-size: 18px;
+}
+
+p {
+  font-size: 15px;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 15px;
+  padding: 6px 14px;
+  border-radius: 4px;
+  color: #fff;
+  background-color: #0078D4;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+
+.btn:active {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.insert-input input:nth-child(2) {
+  margin-top: 8px;
+}
+
+input {
+  font-size: 14px;
+  padding: 5px 8px;
 }
