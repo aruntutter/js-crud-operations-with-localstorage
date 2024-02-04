@@ -15,37 +15,50 @@
     <h1>JavaScript CRUD Operations Using LocalStorage</h1>
   </header>
 
-  <div class="user-input-container">
-    <div class="insert-container">
-      <h3>Insert/ Update Data</h3>
-      <p>Enter a key and a value to add and/ or update records</p>
-      <div class="insert-input">
-        <input type="text" placeholder="Enter Key" id="user-key"><input type="text" placeholder="Enter Value"
-          id="user-value">
+  <main>
+    <div class="user-input-container">
+      <div class="insert-container">
+        <h3>Insert/ Update Data</h3>
+        <p>Enter a key and a value to add and/ or update records</p>
+        <div class="insert-input">
+          <input type="text" placeholder="Enter Key" id="user-key"><input type="text" placeholder="Enter Value"
+            id="user-value">
+        </div>
+        <div class="btn" id="key-value-btn">Insert Data</div>
       </div>
-      <div class="btn" id="key-value-btn">Insert Data</div>
+
+      <div class="read-data-container">
+        <h3>Read Data</h3>
+        <p>Enter a key and a value for the record</p>
+        <div class="input-key">
+          <input type="text" placeholder="Enter Key" id="key-to-read">
+        </div>
+        <div class="btn">Read Data</div>
+      </div>
+
+      <div class="Delete-data-container">
+        <h3>
+          Delete Data
+        </h3>
+        <p>Enter a key to delete the record associated with that key</p>
+        <div class="input-key">
+          <input type="text" placeholder="Enter Key" id="key-to-delete-value">
+        </div>
+        <div class="btn" id="btn-delete-value">Delete Data</div>
+      </div>
     </div>
 
-    <div class="read-data-container">
-      <h3>Read Data</h3>
-      <p>Enter a key and a value for the record</p>
-      <div class="input-key">
-        <input type="text" placeholder="Enter Key" id="key-to-read">
+    <div class="output-container" id="output-container">
+      <h3>Local Storage</h3>
+      <p>Records available in LocalStorage</p>
+      <hr>
+      <div class="output" id="output">
+        <p id="output-key">Key is:</p>
+        <p id="output-value">Value is:</p>
       </div>
-      <div class="btn">Read Data</div>
+      <div class="btn delete-all" id="btn-delete-all">Delete All Data</div>
     </div>
-
-    <div class="Delete-data-container">
-      <h3>
-        Delete Data
-      </h3>
-      <p>Enter a key to delete the record associated with that key</p>
-      <div class="input-key">
-        <input type="text" placeholder="Enter Key" id="key-to-delete-value">
-      </div>
-      <div class="btn" id="btn-delete-value">Delete Data</div>
-    </div>
-  </div>
+  </main>
 
   <!-- SCRIPT -->
   <script src="./script.js"></script>

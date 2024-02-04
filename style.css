@@ -18,18 +18,24 @@ header h1 {
   margin: 2rem 0;
 }
 
+main {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 1rem;
+}
+
 .user-input-container {
   display: flex;
   flex-direction: column;
-  padding: 1rem 2rem;
-  gap: 3rem;
+  gap: 1rem;
 }
 
 .insert-container,
 .read-data-container,
-.Delete-data-container {
+.Delete-data-container,
+.output-container {
   max-width: 400px;
-  padding: 10px;
+  padding: 20px;
   background-color: #fff;
   border-radius: 6px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -50,8 +56,11 @@ p {
 
 .btn {
   display: inline-block;
+  width: 128px;
+  text-align: center;
   font-size: 15px;
   padding: 6px 14px;
+  margin-top: 15px;
   border-radius: 4px;
   color: #fff;
   background-color: #0078D4;
@@ -70,4 +79,14 @@ p {
 input {
   font-size: 14px;
   padding: 5px 8px;
+}
+
+.output-container {
+  width: 400px;
+  height: fit-content;
+  padding: 20px;
+}
+
+.output {
+  margin-top: 10px;
 }
