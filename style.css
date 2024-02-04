@@ -18,7 +18,7 @@ header h1 {
   margin: 2rem 0;
 }
 
-main {
+.user-input-container {
   display: flex;
   flex-direction: column;
   padding: 1rem 2rem;
