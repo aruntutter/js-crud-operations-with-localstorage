@@ -68,6 +68,10 @@ p {
   transition: box-shadow 0.3s ease;
 }
 
+.delete-all {
+  background-color: rgb(243, 39, 39);
+}
+
 .btn:active {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
@@ -89,4 +93,32 @@ input {
 
 .output {
   margin-top: 10px;
+}
+
+
+/* Media query for screens less than 400px */
+@media screen and (max-width: 400px) {
+
+  header h1 {
+    font-size: 22px;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .insert-container,
+  .read-data-container,
+  .Delete-data-container {
+    margin-left: 10px;
+    max-width: 95%;
+  }
+
+  .output-container {
+    max-width: 95%;
+    margin-top: 1rem;
+  }
 }
