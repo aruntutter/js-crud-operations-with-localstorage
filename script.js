@@ -1,5 +1,9 @@
 "use strict";
 
+alert(`Example input format:
+Key: 123
+Value: Arun`);
+
 document.addEventListener("DOMContentLoaded", function () {
   // Get Insert/Update Data elements
   const userKeyInput = document.getElementById("user-key");
