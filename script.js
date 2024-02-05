@@ -55,6 +55,21 @@ document.addEventListener("DOMContentLoaded", function () {
     keyToReadInput.value = "";
   });
 
+  // Delete Data
+  deleteDataBtn.addEventListener("click", function () {
+    const keyToDelete = keyToDeleteInput.value;
+
+    if (localStorage.getItem(keyToDelete)) {
+      localStorage.removeItem(keyToDelete);
+      updateOutput();
+      // Clear input field
+      keyToDeleteInput.value = "";
+      alert(`Click "OK" to Delete the entered Key and it's Value`);
+    } else {
+      alert("Record not found for the provided key.");
+    }
+  });
+
   // Update Output on page load
   updateOutput();
 
@@ -71,4 +86,12 @@ document.addEventListener("DOMContentLoaded", function () {
       output.appendChild(record);
     }
   }
+
+  // Delete All Data
+  deleteAllBtn.addEventListener("click", function () {
+    localStorage.clear();
+    updateOutput();
+    // Clear input field
+    keyToDeleteInput.value = "";
+  });
 });
