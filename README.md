@@ -4,7 +4,6 @@
 
 - [Description](#description)
 - [Links](#links)
-- [Screenshot](#screenshot)
 - [Demo](#demo)
 - [Features](#features)
 - [Technologies Used](#technologies-used)
@@ -18,16 +17,12 @@ JavaScript CRUD Operations Using LocalStorage is a simple web application that d
 
 ## Links
 
-- Solution URL: [GitHub Repository]()
-- Live Demo: [Live Demo URL]()
-
-## Screenshot
-
-![Screenshot]()
+- Solution URL: [GitHub Repository](https://github.com/aruntutter/js-crud-operations-with-localstorage)
+- Live Demo: [Live Demo URL](https://eclectic-mochi-5fa3fd.netlify.app/)
 
 ## Demo
 
-You can view a live demo of the application [here]().
+You can view a live demo of the application [here](https://eclectic-mochi-5fa3fd.netlify.app/).
 
 ## Features
 
